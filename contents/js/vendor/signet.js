@@ -224,4 +224,4 @@
     return drawLinks();
   });
 
-}).call(this);
+})//.call(this);

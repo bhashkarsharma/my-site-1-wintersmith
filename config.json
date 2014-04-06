@@ -1,14 +1,16 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "Particles & Waves",
-    "owner": "Michael Nason",
-    "description": "by Michael Nason",
+    "url": "http://localhost:8000",
+    "name": "Bhashkar Sharma",
+    "owner": "Bhashkar Sharma",
+    "description": "",
     "feedPath": "/feed.xml"
   },
+  "port" : "8000",
   "plugins": [
     "./plugins/paginator.coffee",
     "./plugins/home.coffee",
+    "./plugins/blog.coffee",
     "wintersmith-handlebars",
     "wintersmith-stylus",
     "wintersmith-browserify"
@@ -25,10 +27,15 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3,
+    "perPage": 5,
     "template": "blog.hbs",
     "first": "blog/index.html",
     "filename": "blog/page/%d/index.html"
+  },
+  "blog": {
+    "postsDir": "articles",
+    "template": "article.hbs",
+    "filenameTemplate": "/:year/:month/:day/:title/index.html"
   },
   "ignore": [
     "**/.DS_Store"

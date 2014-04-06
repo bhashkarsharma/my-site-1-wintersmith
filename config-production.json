@@ -1,11 +1,11 @@
 {
   "locals": {
     "production": true,
-    "analytics_id": "UA-44577443-1",
-    "url": "http://nason.us",
-    "name": "Particles & Waves",
-    "owner": "Michael Nason",
-    "description": "by Michael Nason",
+    "analytics_id": "UA-2340837-4",
+    "url": "http://bhashkar.me",
+    "name": "Bhashkar Sharma",
+    "owner": "Bhashkar Sharma",
+    "description": "",
     "feedPath": "/feed.xml"
   },
   "plugins": [

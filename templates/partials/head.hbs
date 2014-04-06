@@ -5,10 +5,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
     <meta name="description" content="{{#if page}}{{ stripTags page.intro }}{{else}}{{ description }}{{/if}}">
+    {{#if page.metadata.canonical}}<link rel="canonical" href="{{ page.metadata.canonical }}"/>{{/if}}
     <meta name="keywords" content="{{ keywords }}">
     {{> og}}
-    <meta name="signet:authors" content="Michael Nason">
-    <meta name="signet:links" content="https://github.com/nason, https://twitter.com/nasonosan, http://nason.us">
+    <meta name="signet:authors" content="Bhashkar Sharma">
+    <meta name="signet:links" content="https://github.com/bhashkarsharma, https://twitter.com/bhashkarsharma, http://bhashkar.me">
     <link rel="alternate" href="{{ url }}{{ feedPath }}" type="application/rss+xml" title="{{ name }}">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
 
