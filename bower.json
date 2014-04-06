@@ -1,12 +1,12 @@
 {
-  "name": "Particles & Waves",
+  "name": "Bhashkar Sharma",
   "version": "0.0.1",
   "authors": [
-    "nason <michael@nason.us>"
+    "nason <info@bhashkar.me>"
   ],
-  "description": "Michael Nason's Personal Site",
+  "description": "Bhashkar Sharma's Personal Site",
   "license": "MIT",
-  "homepage": "nason.us",
+  "homepage": "bhashkar.me",
   "private": true,
   "ignore": [
     "**/.*",
