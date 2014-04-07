@@ -4,6 +4,6 @@ head.load([
   '/js/init.js',
   '/js/full-header.js',
   '/js/vendor/smooth-scroll.js',
-  '/js/homepage-effects.js',
-  '/js/contact-form.js'
+  '/js/homepage-effects.js'
+  //'/js/contact-form.js'
 ]);
