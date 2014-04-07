@@ -1,3 +1,2 @@
-# My personal site, Particles & Waves.
+# My personal site
 
-## More info coming soon.
