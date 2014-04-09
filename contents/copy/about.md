@@ -10,4 +10,4 @@ I have had the opportunity to give talks on JS-related things we built at [MobSt
 
 I love books; and sometimes try to write. I enjoy sharing my learnings on [Quora](http://quora.com/Bhashkar-Sharma), among other places.
 
-The excitement of learning new things is the reason I get out bed in the morning.
+The excitement of learning new things is the reason I get out of bed in the morning.
