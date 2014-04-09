@@ -1,0 +1,6 @@
+{
+  "template": "page.hbs",
+  "filename": "snake/index.html",
+  "title": "Snake",
+  "content": "snake.md"
+}
