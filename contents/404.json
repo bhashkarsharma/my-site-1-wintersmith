@@ -1,0 +1,6 @@
+{
+  "template": "page.hbs",
+  "filename": "404/index.html",
+  "title": "Not Found",
+  "content": "404.md"
+}

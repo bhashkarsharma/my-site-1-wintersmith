@@ -1,19 +1,19 @@
 ## Snake
 
-I created this when I was getting bored waiting for something.
+I created this when I was getting bored waiting for something. I was missing the old-school brick game, and figured I'd try replicating the feel.
 
 <style>
+    #page .box.style3 {
+        text-align: center;
+    }
     #game {
         border: 10px solid;
         border-radius: 10px;
-        margin: 30px auto;
     }
 </style>
-<div><a href="#" id="start">Start</a>
-<a href="#" id="stop">Stop</a></div>
 <canvas id="game" width="500" height="500"></canvas>
 <div>Score: <span id="score"></div>
-<script src="jquery.1.7.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript">
 brick = function(selector) {
     var el = $(selector);
@@ -66,44 +66,47 @@ brick = function(selector) {
     }
 }
 
+/*
 brick_game = {
     interval : 400,
     score : 0,
     fps : 2.5,
-    speed : 1000/2.5,
+    speed : 1000/10,
     start : function() {},
     pause: function() {},
     stop: function() {},
     event : function() {}
 }
-
 object = {
     size: 0,
     body : [],
     direction : 'right'
 }
+*/
 
 $(document).ready(function() {
     // initial direction
     var d = 'right';
     // number of ms before the snake moves again
-    var speed = 400;
+    var speed = 100;
     // score
     var score = 0;
     var interval;
-    game = brick('#game');
+    var game = brick('#game');
     // the snake object
-    snake = {
+    var snake = {
         length : 5,
         body : [],
         init : function() {
+            score = 0;
+            speed = 100;
             snake.body = [];
             for (var i=snake.length; i>0; i--) {
-                console.log(i)
+                //console.log(i)
                 snake.body.push({ x : i, y : 0 });
-                console.log(JSON.stringify(snake.body), snake.body.length)
+                //console.log(JSON.stringify(snake.body), snake.body.length)
             }
-            console.log(JSON.stringify(snake.body))
+            //console.log(JSON.stringify(snake.body))
         },
         draw : function() {
             game.cls();
@@ -157,16 +160,47 @@ $(document).ready(function() {
             tail.x = dx;
             tail.y = dy;
             snake.body.unshift(tail);
-            console.log(JSON.stringify(snake.body))
+            //console.log(JSON.stringify(snake.body))
             snake.draw();
 
             // check for collision with self
             if (check_collision({ body : snake.body.slice(1) }, { body : [snake.body[0]] })) {
             //if (snake.body.indexOf(tail) != snake.body.lastIndexOf(tail)) {
-                console.log('Touched self!');
+                //console.log('Touched self!');
+                game_over();
+            }
+
+            // check for collision with wall
+            if (check_collision(snake, wall)) {
                 game_over();
             }
         }
+    };
+
+    var wall = {
+        body: (function() {
+            var list = [];
+            for (var i=0; i<game.w; i++) {
+                list.push({
+                    x : i,
+                    y : 0
+                });
+                list.push({
+                    x : i,
+                    y : game.h
+                });
+            }
+            for (var j=0; j<game.h; j++) {
+                list.push({
+                    x : 0,
+                    y : j
+                });
+                list.push({
+                    x : game.w,
+                    y : j
+                });
+            }
+        })()
     };
 
     var food = {
@@ -211,6 +245,8 @@ $(document).ready(function() {
         else if(key == "38" && d != "down") d = "up";
         else if(key == "39" && d != "left") d = "right";
         else if(key == "40" && d != "up") d = "down";
+        // prevent scrolling
+        if (key == "40" || key == "38") e.preventDefault();
     });
 
     
@@ -224,7 +260,7 @@ $(document).ready(function() {
         interval = setInterval(function() { snake.move(); food.draw(); $('#score').html(score); }, speed);
     }
     start_game();
-    game_over = function() {
+    var game_over = function() {
         if (typeof(interval) != "undefined") {
             clearInterval(interval);
         }
