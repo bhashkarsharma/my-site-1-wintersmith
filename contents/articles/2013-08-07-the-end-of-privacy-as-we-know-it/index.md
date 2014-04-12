@@ -16,6 +16,8 @@ This week a new incident followed the already snowballing set of activities in t
 
 Security expert Bruce Schneier has this to say [about the NSA surveillance](https://www.schneier.com/blog/archives/2013/08/nsa_surveillanc.html). I used to have a lot of respect for America because of [what it stood for](https://www.youtube.com/watch?v=q49NOyJ8fNA). Those values seem to be decaying. The 'land of the free; home of the brave' is the one which is now headed to prosecute the people who told the public what their government is secretly doing with their personal data. This sounds a lot like 'shoot the messenger' to me. As Carlin used to say, the only American value that has remained, is buying things.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/yt49DsfKDMc" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="560" height="315" src="//www.youtube.com/embed/yt49DsfKDMc" frameborder="0" allowfullscreen></iframe>
+</div>
 
 At the risk of sounding clichéd, I will leave you with one word: [1984](https://en.wikipedia.org/wiki/Nineteen_Eighty-Four).

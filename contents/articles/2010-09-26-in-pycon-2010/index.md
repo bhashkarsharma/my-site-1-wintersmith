@@ -15,7 +15,9 @@ I've uploaded this video to make some sense out of all the gibberish I've been s
 
 I'm also taking the liberty to include the link to [the source](http://www.johnnylee.net/) of his inspiration.
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/hmISFEQctuQ" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/hmISFEQctuQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The other presentation that I really had fun at was the one about 3D Game development in [Blender](http://www.blender.org/) which is a Python based gaming-engine-cum-IDE. Think about it. Free. Open source. And allows you to build 3D games. And did I mention that you don't need to write code for that? That's right, my friend! I'm definitely gonna get my hands dirty with it. (Takes a while to get acquainted with the tools, I hear, but nevertheless, worth a shot all the same!) :) Enjoy!! 
 

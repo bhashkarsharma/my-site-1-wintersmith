@@ -20,7 +20,9 @@ I read somewhere that in a study they found that as long as you are in a stable 
 
 And I'll quote my iCon Steve here (I do that often)- _"You've got to find what you love. And that is as true for your work as it is for your lovers. Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking until you find it. Don't settle."_
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/Hd_ptbiPoXM" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/Hd_ptbiPoXM" frameborder="0" allowfullscreen></iframe>
+</div>
 
 \* and here's the funny realization that I had. When most of us want (here 'want' refers to truly wanting from the bottom of your heart) to follow our dreams, who is this 'everyone' that has such lame beliefs?</div></div>
 </div>

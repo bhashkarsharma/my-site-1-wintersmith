@@ -18,7 +18,9 @@ I was having this discussion with my colleagues the other day (being one of my f
 
 The point I'm trying to make here is, its not easy in most cases. Most people have pursued what they wanted to do even when they didn't have the time, energy or resources to. It reminds me of an great scene from a legendary movie by one of the most [inspiring people](http://www.youtube.com/watch?v=ywuse55qU2A):
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/fkIyE_bi3P0" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/fkIyE_bi3P0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 (find the text for this scene [here](http://www.imdb.com/title/tt0479143/quotes?qt=qt0349288))
 
@@ -26,7 +28,9 @@ J K Rowling wrote initial books of Harry Potter over 6 tough years filled with l
 
 Here's Rowling's Harvard Commencement Address:
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/wHGqp8lz36c" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/wHGqp8lz36c" frameborder="0" allowfullscreen></iframe>
+</div>
 
 >Failure meant a stripping away of the inessential. I stopped pretending to myself that I was anything other than what I was, and began to direct all my energy to finishing the only work that mattered to me. _Had I really succeeded at anything else, I might never have found the determination to succeed in the one area where I truly belonged_. I was set free, because my greatest fear had been realized, and I was still alive, and I still had a daughter whom I adored, and I had an old typewriter, and a big idea. And so rock bottom became a solid foundation on which I rebuilt my life.
 

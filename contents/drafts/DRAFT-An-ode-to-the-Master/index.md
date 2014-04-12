@@ -9,7 +9,9 @@ A child about to be born to college students is put to be adopted at birth. The 
 
 This morning I woke up to the sad news that Steve Jobs has left us. To most others I know, he was the CEO of Apple, a visionary, an artist etc. To me, he was my iDol. Ever since I watched his Stanford Commencement address, for me he had become a spiritual soul, someone who did things because his heart told him to.
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/Hd_ptbiPoXM" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/Hd_ptbiPoXM" frameborder="0" allowfullscreen></iframe>
+</div>
 
 And he implored others to do the same.
 
@@ -29,7 +31,9 @@ The ideas and innovations that
 
 And I believe it depicts truly what Apple stands for. Since Steve Jobs' return to the company and the miraculous turn-around (also referred to as <a href="http://www.amazon.com/iCon-Steve-Jobs-Greatest-Business/dp/0471720836">the greatest second act in the history of business</a>) it went on to become the most valuable company in the US.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/RbUnacXOLEQ" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="560" height="315" src="//www.youtube.com/embed/RbUnacXOLEQ" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Its not about the rags-to-riches story
 Its not about the products/companies he built

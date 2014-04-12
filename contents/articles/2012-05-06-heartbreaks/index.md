@@ -26,7 +26,9 @@ The upside to heartbreaks is, you get to know the REAL people. Both of their fac
 
 This quote reminded me of a song:
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/5vO9qp9cx4Q" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/5vO9qp9cx4Q" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Of course, you're going to get your heart broken. And it isn't just going to happen once, but a lot. That's just part of growing up, and it makes you stronger. Then you can handle it better next time. You may not get through it yourself, but your friends will help you through it. And you'll be a stronger person because of it. Then one day someone will come along, and it'll all pay off and no one will ever break your heart again. Always have good friends around.
 

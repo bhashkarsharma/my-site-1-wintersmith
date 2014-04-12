@@ -9,4 +9,6 @@ I found the whole episode amusing; specially the fact that they related it to [A
 
 Anyway, here's a little something for you. After all, this is what the [internets](http://en.wikipedia.org/wiki/Internets) are all about, no?
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/q1dpQKntj_w" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/q1dpQKntj_w" frameborder="0" allowfullscreen></iframe>
+</div>

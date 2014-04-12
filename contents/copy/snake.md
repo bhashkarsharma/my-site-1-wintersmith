@@ -1,12 +1,13 @@
 ## Snake
 
-I created this when I was getting bored waiting for something. I was missing the old-school brick game, and figured I'd try replicating the feel.
+I created this when I was getting bored waiting for something. I was missing the old-school brick game, and figured I'd try replicating the experience.
 
 <style>
-    #page .box.style3 {
+    body {
         text-align: center;
-    }
-    #game {
+    } #page .box.style3 {
+        text-align: center;
+    } #game {
         border: 10px solid;
         border-radius: 10px;
     }
@@ -66,31 +67,15 @@ brick = function(selector) {
     }
 }
 
-/*
-brick_game = {
-    interval : 400,
-    score : 0,
-    fps : 2.5,
-    speed : 1000/10,
-    start : function() {},
-    pause: function() {},
-    stop: function() {},
-    event : function() {}
-}
-object = {
-    size: 0,
-    body : [],
-    direction : 'right'
-}
-*/
-
 $(document).ready(function() {
     // initial direction
     var d = 'right';
     // number of ms before the snake moves again
     var speed = 100;
+    //level
+    var level = 0;
     // score
-    var score = 0;
+    var score = 190;
     var interval;
     var game = brick('#game');
     // the snake object
@@ -98,12 +83,11 @@ $(document).ready(function() {
         length : 5,
         body : [],
         init : function() {
-            score = 0;
-            speed = 100;
+            snake.length = 5;
             snake.body = [];
             for (var i=snake.length; i>0; i--) {
                 //console.log(i)
-                snake.body.push({ x : i, y : 0 });
+                snake.body.push({ x : i, y : 20 });
                 //console.log(JSON.stringify(snake.body), snake.body.length)
             }
             //console.log(JSON.stringify(snake.body))
@@ -154,6 +138,12 @@ $(document).ready(function() {
                 food.init();
                 food.draw();
                 score = score + 10;
+                if (score > 0 && score % 100 == 0) {
+                    console.log('score ', score)
+                    level++;
+                    console.log(level)
+                    wall.init();
+                }
             }
 
             var tail = snake.body.pop();
@@ -177,8 +167,11 @@ $(document).ready(function() {
         }
     };
 
-    var wall = {
-        body: (function() {
+    var levelgrid = {
+        0 : function() {
+            return [];
+        },
+        1 : function() {
             var list = [];
             for (var i=0; i<game.w; i++) {
                 list.push({
@@ -187,7 +180,7 @@ $(document).ready(function() {
                 });
                 list.push({
                     x : i,
-                    y : game.h
+                    y : game.h - 1
                 });
             }
             for (var j=0; j<game.h; j++) {
@@ -196,24 +189,41 @@ $(document).ready(function() {
                     y : j
                 });
                 list.push({
-                    x : game.w,
+                    x : game.w - 1,
                     y : j
                 });
             }
-        })()
+            return list;
+        }
+    };
+
+    var wall = {
+        body: [],
+        init : function() {
+            wall.body = levelgrid[Math.floor(level/2)]();
+            console.log(wall.body)
+        },
+        draw : function() {
+            for (var i in wall.body) {
+                console.log(wall.body[i].x, wall.body[i].y);
+                game.draw_brick(wall.body[i].x, wall.body[i].y);
+            }
+        }
     };
 
     var food = {
         body : [],
         length : 1,
         init : function() {
-            food.body = [];
-            for (var i=0; i < food.length; i++) {
-                food.body.push({
-                    x : Math.round(Math.random() * game.w),
-                    y : Math.round(Math.random() * game.h)
-                });
-            }
+            do {
+                food.body = [];
+                for (var i=0; i < food.length; i++) {
+                    food.body.push({
+                        x : Math.round(Math.random() * game.w),
+                        y : Math.round(Math.random() * game.h)
+                    });
+                }
+            } while (check_collision(snake, food) || check_collision(wall, food))
         },
         draw : function() {
             for (var i in food.body) {
@@ -249,17 +259,24 @@ $(document).ready(function() {
         if (key == "40" || key == "38") e.preventDefault();
     });
 
-    
-
     var start_game = function() {
         game.cls();
+        d = 'right';
+        wall.init();
+        wall.draw();
         snake.init();
         snake.draw();
         food.init();
         food.draw();
-        interval = setInterval(function() { snake.move(); food.draw(); $('#score').html(score); }, speed);
+        interval = setInterval(function() {
+            snake.move(); 
+            wall.draw(); 
+            food.draw(); 
+            $('#score').html(score); 
+        }, speed);
     }
     start_game();
+
     var game_over = function() {
         if (typeof(interval) != "undefined") {
             clearInterval(interval);
@@ -268,7 +285,5 @@ $(document).ready(function() {
             start_game();
         }
     }
-    $('#start').click(function() {start_game(); });
-    $('#stop').click(function() {game_over(); });
 });
 </script>

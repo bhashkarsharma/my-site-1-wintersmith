@@ -11,4 +11,6 @@ I might be wrong, but you can't ignore the big picture. Take this, and add to it
 
 And here's the customary dose of fun:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/QxVlBlhVuY8" frameborder="0" allowfullscreen></iframe>
+<div class="video-box">
+    <iframe width="560" height="315" src="//www.youtube.com/embed/QxVlBlhVuY8" frameborder="0" allowfullscreen></iframe>
+</div>
