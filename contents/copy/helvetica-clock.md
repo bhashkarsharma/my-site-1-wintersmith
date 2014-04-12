@@ -3,18 +3,27 @@ body {
     font-family: Helvetica;
     text-align: center;
 } #glow { 
-    font-size: 20px;
     line-height: 1.2;
-} #glow .on, #glow .off { 
-    display: inline-block; 
-    width: 30px; 
-    height: 30px; 
-    text-align: center; 
 } #glow .on {
     color: #333;
 } #glow .off { 
     color: #ddd; 
-}
+} #glow .on, #glow .off { 
+    display: inline-block; 
+    text-align: center; 
+} @media (max-width: 480px) { #glow .on, #glow .off { 
+    font-size: 16px;
+    width: 22px; 
+    height: 22px;
+} } @media (min-width: 481px) and (max-width: 960px) { #glow .on, #glow .off { 
+    font-size: 20px;
+    width: 30px; 
+    height: 30px; 
+} } @media (min-width: 961px) { #glow .on, #glow .off { 
+    font-size: 30px;
+    width: 40px; 
+    height: 40px; 
+} }
 </style>
 ## Helvetica Clock
 
