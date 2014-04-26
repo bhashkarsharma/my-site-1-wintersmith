@@ -2,6 +2,8 @@
 
 Things I tinker with.
 
-[Snake](/snake/)
+[Snake](/stuff/snake/)
 
-[Helvetica Clock](/helvetica-clock/)
+[Helvetica Clock](/stuff/helvetica-clock/)
+
+[Physics](/stuff/physics/)

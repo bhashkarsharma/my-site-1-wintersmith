@@ -75,7 +75,7 @@ $(document).ready(function() {
     //level
     var level = 0;
     // score
-    var score = 190;
+    var score = 0;
     var interval;
     var game = brick('#game');
     // the snake object

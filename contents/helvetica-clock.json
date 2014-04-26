@@ -1,6 +1,6 @@
 {
   "template": "page.hbs",
-  "filename": "helvetica-clock/index.html",
+  "filename": "stuff/helvetica-clock/index.html",
   "title": "Helvetica Clock",
   "content": "helvetica-clock.md"
 }

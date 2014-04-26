@@ -1,6 +1,6 @@
 {
   "template": "page.hbs",
-  "filename": "snake/index.html",
+  "filename": "stuff/snake/index.html",
   "title": "Snake",
   "content": "snake.md"
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> head}}
+  <body>
+    {{#if analytics_id}}{{> ga}}{{/if}}
+    <div class="mobile-background"></div>
+	<style>
+	.box:before {
+		background: none;
+		width: 0;
+		height: 0;
+	}
+	#post #page-header {
+		background: rgba(13, 13, 13, 1);
+	}
+	#post .box.style3, #post .box.style2 header {
+		margin-top: 0;
+		background: white;
+	}
+	.box.style2:after, .box.style3:after {
+		border: none;
+	}
+	.box.style3 h2 {
+		font-weight: bold;
+	}
+	#lead-image {
+		height: 400px;
+		text-align: center;
+		background-size: cover;
+		background-image: url({{page.metadata.image}});
+		background-image: url({{page.metadata.image}}), linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(33, 33, 33, 0.8) 100%);
+		background-position: center center;
+		position: relative;
+	}
+	#lead-title {
+		color: white;
+		font-weight: bold;
+		font-size: 150%;
+		padding: 30px 0;
+		position: absolute;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+	.date {
+		font-size: 0.5em;
+	}
+	.credit {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		color: white;
+		font-size: 10px;
+		padding: 0 5px;
+		background-color: rgba(33,33,33,0.33);
+	}
+	</style>
+	<main id="post">
+		{{> header}}
+		<div id="lead-image">
+			<div id="lead-title">
+				<h2><a href="{{page.url}}">{{page.title}}</a></h2>
+				<p class="date"><span>{{date page.metadata.date}}</span></p>
+			</div>
+			<div class="credit">{{page.metadata.image-credit}}</div>
+		</div>
+		<article class="container box style3">
+			<header>
+				<!-- <h2><a href="{{page.url}}">{{page.title}}</a></h2>
+				<p class="date"><span>{{date page.metadata.date}}</span></p> -->
+			</header>
+			<section>
+				{{{typogr page.html}}}
+			</section>
+
+			{{#if page.metadata.comments}}
+				{{> disqus}}
+			{{/if}}
+
+		</article>
+
+		<!-- Back to Blog Box -->
+		<article class="container box style2">
+			<header>
+				<h2><a href="/blog/">&larr; Return to Blog</a></h2>
+			</header>
+		</article>
+		{{> footer}}
+	</main>
+	<script>
+	window.onload = function() {
+		var doc = document.documentElement;
+		var pic = document.getElementById('lead-image');
+		var title = document.getElementById('lead-title');
+		var header = document.getElementById('page-header');
+		pic.style.height = (window.innerHeight - header.offsetHeight) + "px";
+		window.onscroll = function() {
+			var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+			title.style.webkitTransform = 'translate3d(0px, ' + top/5 + 'px, 0px)';
+			title.style.opacity = 1 - top/500;
+		}
+	}
+	</script>
+{{> close}}

@@ -1,0 +1,6 @@
+{
+  "template": "page.hbs",
+  "filename": "stuff/physics/index.html",
+  "title": "Physics",
+  "content": "physics.md"
+}

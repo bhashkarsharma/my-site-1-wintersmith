@@ -23,3 +23,15 @@ site.settings = {
 
 // Initialize skelJS
 site.skel.init(site.settings);
+
+(function() {
+    var elm = document.getElementById('body'),
+        url = '/images/lake_bg.jpg';
+    elm.style.backgroundImage = "none";
+    var tmp = new Image();
+    tmp.onload = function() {
+       elm.style.backgroundImage = "url('"+url+"')";
+       // or insert some other special effect code here.
+    };
+    tmp.src = url;
+})();
