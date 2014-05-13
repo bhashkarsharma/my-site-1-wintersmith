@@ -1,6 +1,6 @@
 ## Lab
 
-Things I tinker with.
+Things that I tinker with.
 
 [Snake](/lab/snake/)
 

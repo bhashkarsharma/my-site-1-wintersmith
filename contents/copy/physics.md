@@ -10,6 +10,7 @@ Trying to implement basic physics in canvas.
     } .kineticjs-content {
         border: 1px solid;
         display: inline-block;
+        background: white;
     }
 </style>
 <div id="can"></div>
@@ -21,22 +22,22 @@ var round = function(num, digits) {
 }
 window.onload = function() {
     var sin = 0, cos = 1;
+    var w = Math.min(500, (window.innerWidth - 2 * document.getElementById('can').offsetLeft));
+    var h = Math.min(500, window.innerHeight);
     window.addEventListener("deviceorientation", function(e) {
         var angle = round(e.gamma * Math.PI/180, 3);
         sin = round(Math.sin(angle), 2);
         cos = round(Math.cos(angle), 2);
-        //console.log(sin, cos)
-        //console.log(round(e.alpha, 2), round(e.beta, 2), round(e.gamma, 2));
     });
     var stage = new Kinetic.Stage({
         container : 'can',
-        width : 500,
-        height : 500
+        width : w,
+        height : h
     });
     var layer = new Kinetic.Layer();
     var ball = new Kinetic.Circle({
-        x: 250,
-        y: 250,
+        x: w/2,
+        y: h/2,
         radius: 10,
         fill: 'rgba(33, 33, 33, 0.9)',
         stroke: 'white',
@@ -66,7 +67,7 @@ window.onload = function() {
             (ball.getX() + ball.getRadius() > stage.getWidth()) || 
             (ball.getY() - ball.getRadius() < 0) || 
             (ball.getY() + ball.getRadius() > stage.getHeight())) {
-            log('hit'); return true;
+            //log('hit'); return true;
         } else return false;
     }
 
@@ -105,7 +106,7 @@ window.onload = function() {
             x : Math.min(ball.getX() + u.x * t + 0.5 * a.x * t * t, stage.getWidth()),
             y : Math.min(ball.getY() + u.y * t + 0.5 * a.y * t * t, stage.getHeight())
         }
-        log('befor ', s, v, u.x * t + 0.5 * a.x * t * t, u.y * t + 0.5 * a.y * t * t);
+        //log('befor ', s, v, u.x * t + 0.5 * a.x * t * t, u.y * t + 0.5 * a.y * t * t);
         // limit the ball within the stage
         // if (s.x < 0 + ball.getRadius()) s.x = 0 + ball.getRadius();
         // if (s.y < 0 + ball.getRadius()) s.y = 0 + ball.getRadius();

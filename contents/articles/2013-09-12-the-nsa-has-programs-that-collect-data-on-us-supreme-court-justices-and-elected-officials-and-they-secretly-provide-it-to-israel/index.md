@@ -26,8 +26,3 @@ Thanks to Snowden, we now know the NSA:
   * **Has programs that collect data on US Supreme Court Justices and elected officials, and they secretly provide it to Israel regulated only by an honor system.** [September](http://www.theguardian.com/world/2013/sep/11/nsa-americans-personal-data-israel-documents)
 
 [[source](http://www.reddit.com/r/worldnews/comments/1m73n4/nsa_shares_raw_intelligence_including_americans/cc6hdm2)]
-
-## Comments
-
-**[Angry Voter](#131 "2013-09-12 17:17:33"):** Everyone involved should be stripped of their US citizenship and shipped to Isreal.
-
