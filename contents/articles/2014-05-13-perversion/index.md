@@ -1,7 +1,9 @@
 ---
 title: Perversion
-template: article.hbs
+template: article-fullimg.hbs
 date: 2014/05/13 09:10:40
+image: "/images/posts/people-devices.jpg"
+image-credit: "https://secure.flickr.com/photos/waagsociety/"
 ---
 I came across this beautiful video recently:<span class="more"/>
 
