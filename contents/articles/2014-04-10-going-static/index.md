@@ -2,6 +2,7 @@
 title: Going Static
 template: article.hbs
 date: 2014/04/10 12:30:00
+comments: true
 ---
 After running the site on an EC2 machine for the last ~ 2 years, while simulaneously writing on various blogs (mostly because I was afraid of losing data); I've finally decided to go static.<span class="more" />
 

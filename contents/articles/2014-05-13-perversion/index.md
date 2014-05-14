@@ -20,9 +20,7 @@ Let's take a look at the word 'Like'.
 like (/lʌɪk/)
 verb
 1. find agreeable, enjoyable, or satisfactory.
-synonyms:   be fond of, be attached to, have a soft spot for,
-have a fondness for, have a liking for, have regard for, think well of,
-look on with favour, hold in esteem, admire, respect, esteem;
+synonyms:   be fond of, be attached to, have a soft spot for, have a fondness for, have a liking for, have regard for, think well of, look on with favour, hold in esteem, admire, respect, esteem;
 antonyms:   dislike, hate
 ```
 
@@ -31,8 +29,7 @@ I have taken a subset of the possible meanings of the word, since it also can be
 ```
 like (/lʌɪk/)
 verb
-2. indicate one's liking or approval of (a web page or posting 
-on a social media website) by means of a particular icon or link.
+2. indicate one's liking or approval of (a web page or posting on a social media website) by means of a particular icon or link.
 ```
 
 Wait? What? You're telling me I use the same word to express my emotions; and to mention the action of clicking a button? I surely am not the only one who finds it strange, right?
