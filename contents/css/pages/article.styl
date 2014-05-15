@@ -28,14 +28,78 @@
       list-style: disc;
     ol
       list-style: decimal;
+  h2 a
+    border: none;
 
 #page
   background: $burnt-orange;
   background: linear-gradient(top, $burnt-orange-93, $black-80);
   background: $black-80;
 
+.sharer
+  text-align: center;
+  a
+    transition: all .2s ease-in-out;
+    vertical-align: top;
+    line-height: 2.5em;
+    font-size: 2em;
+    margin: 10px;
+    border: none;
+    &.facebook-share
+      color: #3b5998;
+    &.twitter-share
+      color: #55acee;
+    &:hover
+      color: grey;
+
 #footer
   .article-footer-bg-overlay
       background: $black;
       background: $black-80;
       padding-top: 1em;
+
+
+.article-fullimg#post
+  .box:before
+    background: none;
+    width: 0;
+    height: 0;
+  #page-header
+    background: rgba(13, 13, 13, 1);
+  .box.style3, .box.style2 header
+    margin-top: 0;
+    background: white;
+  .box.style2:after, .box.style3:after
+    border: none;
+  .box.style3 h2
+    font-weight: bold;
+
+#lead-image
+  height: 450px;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(13, 13, 13, 1);
+  position: relative;
+  .date
+    font-size: 0.5em;
+  .credit
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-size: 10px;
+    padding: 0 5px;
+    background-color: rgba(33,33,33,0.33);
+
+#lead-title
+  color: white;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
