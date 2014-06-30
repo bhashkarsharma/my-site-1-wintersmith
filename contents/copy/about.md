@@ -22,15 +22,12 @@ I love books; and sometimes try to write. I enjoy sharing my learnings on [Quora
 The excitement of learning new things is the reason I get out of bed in the morning.
 
 <script>
-document.getElementById('link-1').onclick = function() {
-    if (document.getElementById('vid-1').style.display != "inherit") {
-        document.getElementById('vid-1').style.display = "inherit";
-        return false;
-    }
-}
-document.getElementById('link-2').onclick = function() {
-    if (document.getElementById('vid-2').style.display != "inherit") {
-        document.getElementById('vid-2').style.display = "inherit";
+document.getElementById('link-1').onclick = function() { show_vid('vid-1') };
+document.getElementById('link-2').onclick = function() { show_vid('vid-2') };
+
+var show_vid = function(div) {
+    if (document.getElementById(div).style.display != "inherit") {
+        document.getElementById(div).style.display = "inherit";
         return false;
     }
 }

@@ -54,7 +54,8 @@
 	    tmp.src = url;
 		window.onscroll = function() {
 			var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-			title.style.webkitTransform = 'translate3d(0px, ' + top/5 + 'px, 0px)';
+			//title.style.webkitTransform = 'translate3d(0px, ' + top/5 + 'px, 0px)';
+			//title.style.background = "none";
 			title.style.opacity = 1 - top/500;
 		}
 	}

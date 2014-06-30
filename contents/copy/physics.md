@@ -128,3 +128,5 @@ window.onload = function() {
     anim.start();
 }
 </script>
+
+This demo will only work on devices that allow Javascript to access the device orientation APIs (MacBook and iOS/Android devices)
