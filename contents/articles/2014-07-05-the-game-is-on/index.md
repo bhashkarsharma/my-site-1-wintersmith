@@ -1,7 +1,7 @@
 ---
 title: The Game Is On
 template: article.hbs
-date: 2014/06/30 09:10:00
+date: 2014/07/05 21:40:00
 comments: true
 ---
 
